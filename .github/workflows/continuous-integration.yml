@@ -144,7 +144,8 @@ jobs:
     - name: Checkout opensim-core master
       uses: actions/checkout@v2
       with:
-         repository: opensim-org/opensim-core
+         repository: albertocasasortiz/opensim-core
+         ref: 'fix_mac_libgcc_problem'
          path: 'opensim-core'
          
     - name: Install Python packages
