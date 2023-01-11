@@ -142,10 +142,11 @@ jobs:
     - name: Checkout opensim-gui
       uses: actions/checkout@v3
 
-    - name: Checkout opensim-core master
+    - name: Checkout opensim-core fix_mac_libgcc_problem
       uses: actions/checkout@v3
       with:
          repository: opensim-org/opensim-core
+         ref: fix_mac_libgcc_problem
          path: 'opensim-core'
          
     - name: Install Python packages
@@ -292,9 +293,10 @@ jobs:
     - name: Checkout opensim-gui
       uses: actions/checkout@v3
 
-    - name: Checkout opensim-core master
+    - name: Checkout opensim-core fix_mac_libgcc_problem
       uses: actions/checkout@v3
       with:
+         ref: fix_mac_libgcc_problem
          repository: opensim-org/opensim-core
          path: 'opensim-core'
          
